@@ -80,6 +80,8 @@ document.getElementById("formId").addEventListener('submit', function(event) {
 
 });
 
+
+
 //Gets lat and lon from city
 function getGeocodeLocation(cityName, stateCode, countryCode) {
 
@@ -116,6 +118,7 @@ function getGeocodeLocation(cityName, stateCode, countryCode) {
 }    
 
 
+
 //Fetches weather data using latitude in longitude from getGeocodeLocation
 function getWeaterData(lat, lon) {
 
@@ -132,6 +135,8 @@ function getWeaterData(lat, lon) {
         console.error(err);
     });
 }
+
+
 
 //Displays city name, temperature in fahrenheit, and weather description
 function displayWeather(data) {
@@ -179,6 +184,7 @@ function displayWeather(data) {
 }
     
 
+
 //Saves locations to be selected with select tag
 function displaySavedLocations() {
 
@@ -202,7 +208,8 @@ function displaySavedLocations() {
 
 }
     
-    
+
+
 //Adds location to select tag when save button is pressed
 document.getElementById("save").addEventListener("click", () => {
 
@@ -225,6 +232,7 @@ document.getElementById("save").addEventListener("click", () => {
 
     displaySavedLocations();
 });
+
 
 
 //Adds info to form of selected option
@@ -250,6 +258,7 @@ function optionSelect(event) {
     }
                 
 }
+
 
 //Delete item from select tag
 document.getElementById("delete").addEventListener("click", function() {
