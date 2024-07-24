@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body id="body">
+    <h1 id="title">Weather App</h1>
+    <form id="formId">
+        <tr>
+            <td>
+                <label for="City" id="cityText">City</label>
+                <input type="text" id="city" name="city" >
+            </td>
+
+            <td>
+                <label for="Country/State" id="countryText">Country/State</label>
+                <input type="text" id="country" name="country">
+            </td>
+
+            <td>
+                <label for="Submit"></label>
+                <input type="submit" id="submit" name="submit">
+            </td>
+        </tr>
+    </form>
+
+    <form id="formSelect">
+        <tr>
+            <select id="savedLocations">
+                <option value="none">none</option>
+            </select>
+        </tr>
+    </form>
+
+    <form id="saveButtonForm">
+        <tr>
+            <td>
+                <label for="Save"></label>
+                <button type="button" id="save">save</button>
+            </td>
+        </tr>
+    </form>
+
+    <form id="deleteButtonForm">
+        <tr>
+            <td>
+                <label for="Delete"></label>
+                <button type="button" id="delete">delete</button>
+            </td>
+        </tr>
+    </form>
+
+
+    <div id="weatherInfo">
+        
+    </div>
+</body>
+</html>
